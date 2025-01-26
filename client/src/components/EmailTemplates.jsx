@@ -18,7 +18,7 @@ const EmailTemplates = () => {
   const { id } = useParams();
   const renderLayout = () => {
     axios
-      .post(`http://localhost:3000/api/emailTemplate/renderEmailLayout/${id}`, emailData, {
+      .post(`https://email-builder-production-7571.up.railway.app/sign-in/api/emailTemplate/renderEmailLayout/${id}`, emailData, {
         withCredentials: true,
       })
       .then((response) => {
@@ -32,7 +32,7 @@ const EmailTemplates = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/emailTemplate/getEmailLayout/${id}`, {
+      .get(`https://email-builder-production-7571.up.railway.app/sign-in/api/emailTemplate/getEmailLayout/${id}`, {
         withCredentials: true,
       })
       .then((response) => {
@@ -52,7 +52,7 @@ const EmailTemplates = () => {
   // Save email configuration to the backend
   const saveTemplate = () => {
     axios
-      .post(`http://localhost:3000/api/emailTemplate/uploadEmailConfig/${id}`, emailData, {
+      .post(`https://email-builder-production-7571.up.railway.app/sign-in/api/emailTemplate/uploadEmailConfig/${id}`, emailData, {
         withCredentials: true,
       })
       .then((response) => {
@@ -66,7 +66,7 @@ const EmailTemplates = () => {
   };
   const downloadTemplate = ()=>{
     axios
-      .get(`http://localhost:3000/api/emailTemplate/downloadTemplate/${id}`, {
+      .get(`https://email-builder-production-7571.up.railway.app/sign-in/api/emailTemplate/downloadTemplate/${id}`, {
         withCredentials: true,
       })
       .then((response) => {
