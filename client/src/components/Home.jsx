@@ -21,7 +21,7 @@ const Home = () => {
   const newTemplate = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/emailTemplate/createEmailLayout",
+        "https://email-builder-production-7571.up.railway.app/sign-in/api/emailTemplate/createEmailLayout",
         { withCredentials: true }
       );
 
