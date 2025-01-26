@@ -18,7 +18,7 @@ const MyTemplates = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          `http://localhost:3000/apiUser/userTemplates/myTemplate/${user.id}`,
+          `https://email-builder-production-7571.up.railway.app/sign-in/apiUser/userTemplates/myTemplate/${user.id}`,
           { withCredentials: true }
         );
 
@@ -40,7 +40,7 @@ const MyTemplates = () => {
   const deleteTemplate = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:3000/apiUser/userTemplates/deleteTemplate/${id}`,
+        `https://email-builder-production-7571.up.railway.app/sign-in/apiUser/userTemplates/deleteTemplate/${id}`,
         { withCredentials: true }
       );
 
