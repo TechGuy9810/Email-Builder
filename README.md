@@ -4,6 +4,8 @@
 The **Email Builder** is a full-stack web application built using the **MERN stack** (MongoDB, Express.js, React, and Node.js). This application enables users to create, edit, and preview email templates with an intuitive user interface. The app also utilizes **EJS template engine** for setting up and rendering the initial email layout and **React Quill** for text manipulation, making the process of building professional emails seamless.
 
 ---
+![image](https://github.com/user-attachments/assets/2e91f046-b9a8-4d78-a795-74875981c926)
+![image](https://github.com/user-attachments/assets/02cf7429-b285-454f-bd71-76d93e214a11)
 
 ## Features
 
@@ -110,4 +112,4 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 ---
 
 ## Contact
-For inquiries or support, please reach out at your-email@example.com.
+For inquiries or support, please reach out at your-abhishek981037@gmail.com.
