@@ -40,7 +40,7 @@ const MyTemplates = () => {
   const deleteTemplate = async (id) => {
     try {
       const response = await axios.delete(
-        `https://email-builder-production-7571.up.railway.app/sign-in/apiUser/userTemplates/deleteTemplate/${id}`,
+        `https://email-builder-production-7571.up.railway.app/apiUser/userTemplates/deleteTemplate/${id}`,
         { withCredentials: true }
       );
 
