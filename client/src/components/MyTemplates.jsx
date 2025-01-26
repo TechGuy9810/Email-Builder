@@ -18,7 +18,7 @@ const MyTemplates = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          `https://email-builder-production-7571.up.railway.app/sign-in/apiUser/userTemplates/myTemplate/${user.id}`,
+          `https://email-builder-production-7571.up.railway.app/apiUser/userTemplates/myTemplate/${user.id}`,
           { withCredentials: true }
         );
 
