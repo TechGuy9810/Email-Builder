@@ -21,7 +21,7 @@ const Editor = ({ emailData, updateField, setLayout, renderLayout, id }) => {
     formData.append("newFooter", emailData.newFooter);
 
     axios
-      .post(`https://email-builder-production-7571.up.railway.app/sign-in/api/emailTemplate/uploadImage/${id}`, formData, {
+      .post(`https://email-builder-production-7571.up.railway.app/api/emailTemplate/uploadImage/${id}`, formData, {
         withCredentials: true,
       })
       .then((response) => {
